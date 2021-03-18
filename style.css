@@ -16,4 +16,11 @@ body {
     font-family: 'Lato',sans-serif;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 8px;  
+}
+
 
