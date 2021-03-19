@@ -3,17 +3,20 @@
     padding: 0;
     font-family: 'Lato', sans-serif ;
     box-sizing: border-box;
+    max-width: 1100px;
+    
 }
 
 .header-top {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1100px;
     background-color: rgba(224, 224, 224, 1);
     display: flex;
     justify-content: space-between;
     height: 10vh;
     align-items: center;
     padding: 0 15px;
+    margin: 0;
 }
 .center {
     font-family: 'Lato',sans-serif;
@@ -27,6 +30,7 @@
 }
 
 .retangulo {
+    display: flex;
     position: absolute;
     width: 400px;
     height: 344px;
