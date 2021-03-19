@@ -14,10 +14,10 @@
         <header class="header-top">
             <img src="./img/Ellipse 13.png" alt="icone" />
             <!--logo-->
-            <samp class="center">
+            <span class="center">
                 <h1 class="titulo">Controle Financeiro </h1>
                 <!--titulo-->
-            </samp>
+            </span>
 
 
             <nav class="nav-container">
@@ -37,60 +37,81 @@
 
     <!--<img src="./img/Hamburger_icon.svg"/>-->
     <!--imagem hamburguer-->
-
-
-
-
     </header>
-    <!--topo-->
 
-    <p><strong>Nova Transação</strong></p>
+    <section id="content">
+        <div id="form-container">
+            <fieldset class="retangulo">
+                <form method="GET" action="">
 
+                    <p class="transaction-title">Nova transação</p>
+                    <div class="input-containers">
+                        <label for="transaction-type" class="label-input">Tipo de transação</label><br>
+                        <select name="transaction-type" id="transaction-type" required>
+                            <option value="">-- Selecione --</option>
+                            <option value="compra">Compra</option>
+                            <option value="venda">Venda</option>
+                        </select>
+                    </div>
+                    <div class="input-containers">
+                        <label for="item-name" class="label-input">Nome da mercadoria</label><br>
+                        <input id="item-name" type="text" name="product-name" placeholder="Input" required>
+                    </div>
+                    <div class="input-containers">
+                        <label for="product-price" class="label-input">Valor</label><br>
+                        <input type="number" id="product-price" placeholder="R$ 0,00" required><br>
+                        <button type="submit" id="btn-transaction">Adicionar transação</button>
+                    </div>
 
-    <form>
-        Tipo de transação:<br> <input type="text" name=""><br>
-        Nome da mercadoria:<br> <input type="text" name=""><br>
-        Valor:<br> <input type="text" name=""><br>
-        <input type="submit" value="Adicionar transação">
-    </form>
+                </form>
 
-    <strong>extrato de transações</strong>
+            </fieldset>
+        </div>
+    </section>
+    <!--<strong>extrato de transações</strong>-->
 
     <div>
         <!--tabela-->
-        <div></div>
-        <!--titulo-->
-        <div>
-            <!--tabela-->
-            <div>
-                <div></div>
-                <div></div>
-            </div>
-            <div>
-                <div></div>
-                <div></div>
-            </div>
-            <div>
-                <div></div>
-                <div></div>
-            </div>
-            <div>
-                <div></div>
-                <div></div>
-            </div>
-            <div>
-                <div></div>
-                <div></div>
-            </div>
+        <div class="table-container">
+           
 
+            <table style="width:50%">
+                <tr>
+                  <th class="table-title">Extrato de transações</th>
+                  <th class="value">Valor</th>
+                </tr>
+                <tr>
+                  <td>+	Nenhuma transação cadastrada</td>
+                  <td>R$ 12.999,00 </td>                    
+                </tr>
+                <tr>
+                  <td>-	Nenhuma transação cadastrada</td>
+                  <td>R$ 99,00</td>
+                </tr>
+                <tr>
+                    <td>+	Nenhuma transação cadastrada</td>
+                    <td>R$ 9,99
+                    </td>
+                </tr>
+                    
+                    <td>
+                        <b>TOTAL</b>
+                    </td>
+                    <td>
+                        <b>R$12.909,99</b> 
+                    </td>
+            </table>
+                                               
+            
+              
+            
         </div>
-        <!--tabela-->
-    </div>
-    <!--tabela-->
 
 
+
+
+
     </div>
-    <!--baixo-->
 
 
 
